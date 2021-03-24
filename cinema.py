@@ -48,9 +48,12 @@ class Cinema:
             rows_seats: lista de butacas a buscar
             total: valor inicial donde se acumularÃ¡ el total
         """
-        for row, seat in rows_seats:
-            if self.__seating[row][seat] == None:
-                total+=1
+        total = 0 
+        plan_asientos = rows_seats
+        for valores in plan_asientos:
+            if valores != None:
+                contador += 1
+        return total
 
 #------------------------------------------- MAIN -----------------------------------------------
 cinema = Cinema(rows=10, seats_per_row=8)

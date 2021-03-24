@@ -26,6 +26,8 @@ get_list('palabras.txt')
 def mas_antiguos (lista, anyo):
     lista_titulos = []
     print (lista)
+    lista_titulos.append(lista[0])
+    
 
 
 

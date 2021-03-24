@@ -1,5 +1,6 @@
-from autor import Autor
-from libro import Libro
+from autor import *
+from libro import *
+
 
 
 
@@ -15,6 +16,8 @@ def get_list (nombre):
     f.close()
 
 def mas_antiguos (lista, anyo):
+    lista_titulos = []
+    print (lista)
 
 
 #----------------main-----------------------------------
@@ -22,7 +25,8 @@ def mas_antiguos (lista, anyo):
 llamada = get_list("palabras.txt")
 
 
-l1 =  Libro("Francisco", "La teoria de la rela" , 2021)
+l1 =  Libro(autor="Francisco", titulo="La teoria de la rela" , anyo=2021)
+print (l1)
 l2 =  Libro("Francisco", "La teoria de la rela" , 2021)
 l3 =  Libro("Francisco", "La teoria de la rela" , 2021)
 lista = []

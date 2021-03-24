@@ -16,5 +16,3 @@ class Autor:
 
 #---------------main----------------------
 
-a1 = ("1", "Francisco", "Primero")
-#print (a1)

@@ -6,7 +6,6 @@ class Libro:
         self.__titulo = titulo
         self.__anyo = anyo
         self.__autor = autor
-        self.__seating = Autor.get_id()
 
     def get_titulo (self):
         return self.__titulo
@@ -14,7 +13,11 @@ class Libro:
     def get_anyo (self):
         return self.__anyo
 
+    def get_autor(self):
+        return self.__autor.Autor
+
 #-----------main-----------------
 
 l1 = Libro(titulo="Las golondrinas" , anyo= 2010 ,  autor = Autor("1", "Francisco", "Primero"))
-print (l1)
+#l1 = Libro("Golondirnas" , 2010, autor=Autor("1", "Francisco", "Primero"))
+#print (l1)
